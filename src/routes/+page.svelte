@@ -1,6 +1,5 @@
 <script>
 	import { searching } from '$lib/stores';
-	import.meta.glob('$lib/gifs/*.gif', { eager: true, import: 'default' });
 
 	import Dashboard from './Dashboard.svelte';
 	import Search from './Search.svelte';
@@ -14,9 +13,9 @@
 	style="background-image: url({data.gif})"
 />
 
-<main class="flex h-screen flex-col justify-center md:p-4">
+<main class="flex h-screen flex-col justify-center p-4">
 	<div
-		class="flex h-screen w-full overflow-hidden border border-neutral-800/25 bg-black/50 backdrop-blur md:mx-auto md:max-h-[600px] md:max-w-screen-lg md:rounded-2xl md:bg-neutral-900/50 md:backdrop-blur-none"
+		class="flex h-screen w-full overflow-hidden rounded-2xl border border-neutral-800/25 bg-black/50 shadow-xl backdrop-blur-sm md:mx-auto md:max-h-[600px] md:max-w-screen-lg md:bg-neutral-900/50"
 	>
 		<img class="hidden aspect-square object-cover md:block md:w-2/5" src={data.gif} alt="" />
 		{#if $searching}

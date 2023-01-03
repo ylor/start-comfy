@@ -1,6 +1,7 @@
-import * as VERCEL from '$lib/vercel/headers.js';
-import fetchWeather from '$lib/actions/fetchWeather.js';
 import { gifs } from '$lib/stores.js';
+
+import fetchWeather from '$lib/actions/fetchWeather.js';
+import * as VERCEL from '$lib/vercel/headers.js';
 
 export async function load({ request }) {
 	const city = request.headers.get(VERCEL.HEADER_CITY) ?? 'Kakariko Village';

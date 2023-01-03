@@ -1,12 +1,12 @@
 <script>
-	import { blur, scale, slide, fade, fly, draw } from 'svelte/transition';
+	import { blur, fade, fly, scale, slide } from 'svelte/transition';
+
+	import { searching } from '$lib/stores.js';
 
 	import fetchFavicon from '$lib/actions/fetchFavicon.js';
 	import fetchSuggestions from '$lib/actions/fetchSuggestions.js';
-	import parseQuery from '$lib/actions/parseQuery.js';
-
 	import { focusable_children, trap } from '$lib/actions/focus.js';
-	import { searching } from '$lib/stores.js';
+	import parseQuery from '$lib/actions/parseQuery.js';
 	import { normalizeUrl } from '$lib/actions/parseUrl.js';
 
 	let form;
@@ -51,7 +51,7 @@
 	<!-- svelte-ignore a11y-autofocus -->
 	<input
 		autofocus
-		class="my-2 flex items-center gap-x-4 rounded-lg border border-neutral-800/75 bg-neutral-900 p-2 text-2xl text-neutral-100 shadow-lg outline-none placeholder:text-neutral-500 focus:border-neutral-800 focus:bg-neutral-800"
+		class="my-2 flex items-center gap-x-4 rounded-lg border border-neutral-800/75 bg-neutral-900 p-2 text-2xl text-neutral-100 shadow-lg outline-none placeholder:text-neutral-500 focus:border-neutral-700/50 focus:bg-zinc-900"
 		placeholder="search"
 		bind:this={input}
 		bind:value={search}
@@ -85,10 +85,10 @@
 	</ul>
 	{#if suggestions.length === 0}
 		<button
-			class="absolute right-0 bottom-4 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
+			class="absolute right-0 bottom-8 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
 			type="button"
 			on:click={() => ($searching = false)}
-			in:slide
+			in:blur
 		>
 			home
 		</button>

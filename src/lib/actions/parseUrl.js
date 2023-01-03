@@ -2,7 +2,7 @@ export function isUrl(string) {
 	const ipPattern = new RegExp(
 		/^(.*?:\/\/)?((dev|local|localhost)|((2(?!5?[6-9])|1|(?!0\d))\d\d?\.?\b){4})(:\d+)?(\/.*)?$/g
 	);
-	const urlPattern = new RegExp(/^((https?:\/\/)?[\w-]+(\.[\w-]+)+\.?(:\d+)?(\/.+)?)$/i);
+	const urlPattern = new RegExp(/^(https?:\/\/)?(\w+)(\.[a-zA-Z]{2,})+(:\d+)?(\/.+)?(\/)?$/i);
 
 	if (ipPattern.test(string) || urlPattern.test(string)) {
 		return true;
@@ -20,7 +20,7 @@ export function normalizeUrl(string) {
 	const urlObject = new URL(string);
 
 	if (urlObject.hostname) {
-		// Remove `www.`
+		// Strip `www.`
 		// if (urlObject.hostname.startsWith("www.")) {
 		// 	urlObject.hostname = urlObject.hostname.replace(/^www\./, "");
 		// }
@@ -33,7 +33,7 @@ export function normalizeUrl(string) {
 
 	if (urlObject.pathname) {
 		urlObject.pathname = decodeURI(urlObject.pathname); // Decode URI octets
-		urlObject.pathname = urlObject.pathname.replace(/\/$/, ''); // Remove trailign slash
+		urlObject.pathname = urlObject.pathname.replace(/\/$/, ''); // Remove trailing slash
 	}
 
 	// Take advantage of node `url` normalizations
