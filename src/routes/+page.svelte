@@ -6,7 +6,7 @@
 	import Search from './Search.svelte';
 
 	export let data;
-	// console.log(data);
+	console.log(data);
 </script>
 
 <div
