@@ -1,13 +1,13 @@
 <script>
 	import { blur, scale, slide, fade, fly, draw } from 'svelte/transition';
 
-	import fetchFavicon from '$lib/js/fetchFavicon.js';
-	import fetchSuggestions from '$lib/js/fetchSuggestions.js';
-	import parseQuery from '$lib/js/parseQuery.js';
+	import fetchFavicon from '$lib/actions/fetchFavicon.js';
+	import fetchSuggestions from '$lib/actions/fetchSuggestions.js';
+	import parseQuery from '$lib/actions/parseQuery.js';
 
-	import { focusable_children, trap } from '$lib/js/focus.js';
+	import { focusable_children, trap } from '$lib/actions/focus.js';
 	import { searching } from '$lib/stores.js';
-	import { normalizeUrl } from '$lib/js/parseUrl.js';
+	import { normalizeUrl } from '$lib/actions/parseUrl.js';
 
 	let form;
 	let input;
@@ -41,10 +41,10 @@
 	autocapitalize="none"
 	autocomplete="off"
 	autocorrect="off"
-	class=" relative flex w-full flex-col p-4 md:w-3/5"
+	class="relative flex w-full flex-col p-4 md:w-3/5"
 	spellcheck="false"
 	bind:this={form}
-	on:submit|preventDefault={location.assign(normalizeUrl(parseQuery(search)))}
+	on:submit|preventDefault={(location.href = normalizeUrl(parseQuery(search)))}
 	use:trap
 	in:scale
 >
@@ -85,7 +85,7 @@
 	</ul>
 	{#if suggestions.length === 0}
 		<button
-			class="absolute right-0 bottom-4 left-0 mx-auto w-24 rounded-full border border-neutral-800/75 bg-neutral-900 bg-neutral-900/90 py-1 tracking-tight text-neutral-400 shadow-xl outline-none"
+			class="absolute right-0 bottom-4 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
 			type="button"
 			on:click={() => ($searching = false)}
 			in:slide

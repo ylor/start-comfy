@@ -1,6 +1,6 @@
 <script>
 	import { searching } from '$lib/stores';
-	import.meta.glob('../lib/gifs/*.gif', { eager: true, import: 'default' });
+	import.meta.glob('$lib/gifs/*.gif', { eager: true, import: 'default' });
 
 	import Dashboard from './Dashboard.svelte';
 	import Search from './Search.svelte';

@@ -12,6 +12,8 @@ export function isUrl(string) {
 }
 
 export function normalizeUrl(string) {
+	if (string === '/') return '/';
+
 	string = string.trim();
 	string = string.includes('://') ? string : `http://${string}`;
 

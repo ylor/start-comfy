@@ -1,6 +1,6 @@
+import { db } from '$lib/stores.js';
 import { getTracking, isTracking } from './parseTracking.js';
 import { isUrl } from './parseUrl.js';
-import { db } from '$lib/stores.js';
 
 function find(str) {
 	str = str.toLowerCase();
@@ -21,6 +21,8 @@ export default function parse(string) {
 	const stringLower = string.toLowerCase();
 
 	// BEGIN PARSER
+
+	if (!string) return (location.href = '/');
 
 	// handle @ for Twitter (@SwiftOnSecurity)
 	if (stringLower.startsWith('@') || stringLower === 'twitter') {

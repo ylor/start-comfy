@@ -1,10 +1,10 @@
 <script>
-	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 
-	import { blur, scale, slide, fade } from 'svelte/transition';
 	import { searching } from '$lib/stores';
-	import Tree from '../lib/dashboard/Tree.svelte';
+	import { blur } from 'svelte/transition';
+	import Tree from '$lib/dashboard/Tree.svelte';
+	import fetchWeather from '$lib/actions/fetchWeather';
 
 	// const time = (date) => {
 	// 	let hours = date.getHours();
@@ -15,12 +15,10 @@
 
 	// 	return `${hours}:${mins} ${ampm}`;
 	// };
-	let now = new Date();
-	// let time = '-:-- --';
-	let weather = '--';
-
 	export let data;
-	// console.log(data);
+
+	let now = new Date();
+	let weather = data.weather;
 
 	function handleKeydown(e) {
 		const { key } = e;
@@ -36,12 +34,16 @@
 	}
 
 	onMount(() => {
-		const interval = setInterval(() => {
+		const timeInterval = setInterval(() => {
 			now = new Date();
 		}, 1000);
+		const weatherInterval = setInterval(() => {
+			fetchWeather(data.lat, data.long).then((response) => (weather = response));
+		}, 900000);
 
 		return () => {
-			clearInterval(interval);
+			clearInterval(timeInterval);
+			clearInterval(weatherInterval);
 		};
 	});
 </script>
@@ -64,7 +66,7 @@
 					})
 					.toLocaleLowerCase()}
 			</time>
-			<span>☀️ {Math.round(data.weather.current_weather.temperature)}°f</span>
+			<span>☀️ {Math.round(weather.current_weather.temperature)}°f</span>
 		</div>
 	</aside>
 
@@ -114,7 +116,7 @@
 	</aside>
 
 	<button
-		class="w-24 rounded-full border border-neutral-800/75 bg-neutral-900/90 py-1 tracking-tight text-neutral-400 shadow-xl outline-none"
+		class="w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
 		on:click={() => ($searching = true)}
 	>
 		search
