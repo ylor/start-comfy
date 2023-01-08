@@ -1,70 +1,65 @@
 <script>
-	export let title = 'Lipsum';
+	export let title = 'favorites';
+	export let links = [{ name: 'example', url: 'https://example.com' }];
+
+	let button;
 </script>
 
-<div class="flex grow basis-0 flex-col items-center rounded-lg p-4">
-	<div class="">
-		<h1 class="select-none font-black">~/{title}</h1>
-		<!-- svelte-ignore a11y-invalid-attribute -->
+<button
+	class="max-h-14 min-w-[20ch] overflow-hidden rounded-xl border border-neutral-800/25 bg-black/40 font-semibold shadow outline-none backdrop-blur-xl duration-500 focus:max-h-64 md:bg-neutral-900"
+	bind:this={button}
+	on:click={button.focus()}
+>
+	<span class="justify flex h-14 items-center truncate px-4 font-semibold">~/{title}</span>
+	<div class="break-all pl-6 pb-4 pr-4 text-left">
 		<ul>
-			<slot>
+			{#each links as link}
 				<li>
-					<a href="">lorem</a>
+					<a href={link.url}>{link.name}</a>
 				</li>
-				<li>
-					<a href="">ipsum</a>
-				</li>
-				<li>
-					<a href="">dolor</a>
-				</li>
-				<li>
-					<a href="">sit</a>
-				</li>
-				<li>
-					<a href="">amet</a>
-				</li>
-			</slot>
+			{/each}
 		</ul>
 	</div>
-</div>
+</button>
 
+<!-- Component End  -->
 <style lang="postcss">
+	a {
+		@apply font-medium hover:underline;
+	}
+
 	ul {
 		list-style: none;
 		padding-left: 1.5rem;
 	}
 
-	ul :global(a) {
-		@apply font-medium hover:underline;
-	}
-
-	ul :global(li) {
+	ul li {
 		--branch: 1px solid rgb(163, 163, 163);
 		max-width: 22ch;
 		position: relative;
 		word-wrap: normal;
 	}
 
-	ul :global(li::before) {
+	ul li::before {
 		border-top: var(--branch);
 		top: 0.75rem;
 		width: 0.75rem;
 	}
 
-	ul :global(li::after) {
+	ul li::after {
 		border-left: var(--branch);
 		height: 100%;
 		top: 0.25rem;
 	}
 
-	ul :global(li::before),
-	ul :global(li::after) {
+	ul li::before,
+	ul li::after {
 		content: '';
 		left: -1rem;
 		position: absolute;
 	}
 
-	ul :global(li:last-child::after) {
+	ul li:last-child::after {
 		height: 0.5rem;
 	}
 </style>

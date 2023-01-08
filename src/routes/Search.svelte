@@ -41,7 +41,7 @@
 	autocapitalize="none"
 	autocomplete="off"
 	autocorrect="off"
-	class="relative flex w-full flex-col p-4 md:w-3/5"
+	class="relative mx-4 flex h-full flex-col"
 	spellcheck="false"
 	bind:this={form}
 	on:submit|preventDefault={(location.href = normalizeUrl(parseQuery(search)))}
@@ -51,7 +51,7 @@
 	<!-- svelte-ignore a11y-autofocus -->
 	<input
 		autofocus
-		class="my-2 flex items-center gap-x-4 rounded-lg border border-neutral-800/75 bg-neutral-900 p-2 text-2xl text-neutral-100 shadow-lg outline-none placeholder:text-neutral-500 focus:border-neutral-700/50 focus:bg-zinc-900"
+		class="my-2 flex items-center gap-x-4 rounded-xl border border-neutral-800/75 bg-black/80 p-2 text-2xl text-neutral-100 shadow-lg outline-none placeholder:text-neutral-500 focus:border-neutral-700/50 focus:bg-neutral-900"
 		placeholder="search"
 		bind:this={input}
 		bind:value={search}
@@ -68,7 +68,7 @@
 			>
 				<!-- svelte-ignore a11y-missing-attribute -->
 				<img
-					class="ml-2 h-8 w-8 brightness-90"
+					class="ml-2 h-8 w-8"
 					src={fetchFavicon(parseQuery(search.includes(':') ? search.split(':')[0] : i))}
 				/>
 				<li class="break-all text-neutral-100">
@@ -84,13 +84,13 @@
 		{/each}
 	</ul>
 	{#if suggestions.length === 0}
-		<button
+		<!-- <button
 			class="absolute right-0 bottom-8 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
 			type="button"
 			on:click={() => ($searching = false)}
 			in:blur
 		>
 			home
-		</button>
+		</button> -->
 	{/if}
 </form>

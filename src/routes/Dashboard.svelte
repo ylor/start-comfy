@@ -2,6 +2,10 @@
 	import { onMount } from 'svelte';
 	import { blur } from 'svelte/transition';
 
+	import favorites from '$lib/dashboard/db/favorites.json';
+	import social from '$lib/dashboard/db/social.json';
+	import media from '$lib/dashboard/db/media.json';
+	import twitch from '$lib/dashboard/db/twitch.json';
 	import { searching } from '$lib/stores';
 
 	import fetchWeather from '$lib/actions/fetchWeather';
@@ -42,8 +46,8 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<section class="mt-8 flex w-full flex-col items-center justify-evenly md:w-3/5" in:blur={{}}>
-	<aside class="text-center">
+<section class="flex h-full flex-col items-center pt-8" in:blur>
+	<aside class="pb-8 text-center">
 		<time class="text-4xl font-black">
 			{now.toLocaleTimeString([], { timeStyle: 'short', timeZone: data.tz })}
 		</time>
@@ -62,8 +66,11 @@
 		</div>
 	</aside>
 
-	<aside class="my-auto flex w-full flex-wrap gap-4">
-		<Tree title="media">
+	<aside class="flex flex-col gap-4">
+		<Tree title="media" links={media} />
+		<Tree title="social" links={social} />
+		<Tree title="twitch" links={twitch} />
+		<!-- <Tree title="media">
 			<li>
 				<a href="https://giantbomb.com">giant_bomb</a>
 			</li>
@@ -107,13 +114,13 @@
 			<li>
 				<a href="https://twitch.tv/paymoneywubby">wubby</a>
 			</li>
-		</Tree>
+		</Tree> -->
 	</aside>
 
-	<button
+	<!-- <button
 		class="mt-auto mb-8 w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
 		on:click={() => ($searching = true)}
 	>
 		search
-	</button>
+	</button> -->
 </section>
