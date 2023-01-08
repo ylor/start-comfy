@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	@apply crt bg-black font-mono text-neutral-200;
+	@apply bg-black font-mono text-neutral-200;
 }
 
 .crt::before {
