@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	import { blur } from 'svelte/transition';
 
-	import favorites from '$lib/dashboard/db/favorites.json';
 	import social from '$lib/dashboard/db/social.json';
 	import media from '$lib/dashboard/db/media.json';
 	import twitch from '$lib/dashboard/db/twitch.json';

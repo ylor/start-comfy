@@ -5,7 +5,7 @@
 	import Search from './Search.svelte';
 
 	export let data;
-	console.log(data);
+	// console.log(data);
 </script>
 
 <div
@@ -27,25 +27,18 @@
 		<section class="relative mt-4 w-full md:w-3/5">
 			{#if $searching}
 				<Search />
-				<button
-					class="absolute right-0 bottom-4 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
-					type="button"
-					on:click={() => ($searching = false)}
-					in:blur
-				>
-					home
-				</button>
 			{:else}
 				<Dashboard {data} />
-				<button
-					class="absolute right-0 bottom-4 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
-					type="button"
-					on:click={() => ($searching = true)}
-					in:blur
-				>
-					search
-				</button>
 			{/if}
+			<button class="btn" on:click={() => ($searching = !$searching)}
+				>{$searching ? 'home' : 'search'}</button
+			>
 		</section>
 	</main>
 </div>
+
+<style lang="postcss">
+	.btn {
+		@apply absolute right-0 bottom-4 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black/50 py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24;
+	}
+</style>
