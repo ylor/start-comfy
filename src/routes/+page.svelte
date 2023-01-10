@@ -1,11 +1,11 @@
 <script>
 	import { searching } from '$lib/stores';
 
-	import Dashboard from './Dashboard.svelte';
-	import Search from './Search.svelte';
+	import Dashboard from '../lib/dashboard/Dashboard.svelte';
+	import Search from '../lib/search/Search.svelte';
 
 	export let data;
-	// console.log(data);
+	console.log(data);
 </script>
 
 <div
@@ -17,13 +17,11 @@
 	<main
 		class="flex w-full grow overflow-hidden rounded-xl border border-neutral-700/25 bg-black/50 shadow backdrop-blur-sm backdrop-saturate-150 md:mx-auto md:max-h-[600px] md:max-w-screen-lg md:bg-neutral-900/50"
 	>
-		<picture class="crt -z-10 md:w-2/5">
-			<img
-				class="hidden aspect-square h-full w-full object-cover md:block "
-				src={data.gif}
-				alt=""
-			/>
+		<picture class="relative shadow md:w-2/5">
+			<aside class="crt" />
+			<img class="hidden h-full w-full object-cover md:block" src={data.gif} alt="" />
 		</picture>
+
 		<section class="relative mt-4 w-full md:w-3/5">
 			{#if $searching}
 				<Search />
@@ -39,6 +37,6 @@
 
 <style lang="postcss">
 	.btn {
-		@apply absolute right-0 bottom-4 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black/50 py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24;
+		@apply absolute right-0 bottom-4 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black/50 py-1 tracking-tight text-neutral-500 backdrop-blur-xl duration-300 hover:w-28 hover:text-neutral-300;
 	}
 </style>

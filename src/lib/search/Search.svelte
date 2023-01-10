@@ -51,7 +51,7 @@
 	<!-- svelte-ignore a11y-autofocus -->
 	<input
 		autofocus
-		class="my-2 flex items-center gap-x-4 rounded-xl border border-neutral-800/75 bg-black/80 p-2 text-2xl text-neutral-100 shadow-lg outline-none placeholder:text-neutral-500 focus:border-neutral-700/50 focus:bg-neutral-900"
+		class="my-2 flex items-center gap-x-4 rounded-xl border border-neutral-800/75 bg-black/50 p-2 text-2xl text-neutral-100 shadow-lg outline-none backdrop-blur-xl placeholder:text-neutral-500 focus:border-neutral-700/50 focus:bg-neutral-900/50"
 		placeholder="search"
 		bind:this={input}
 		bind:value={search}
@@ -61,7 +61,7 @@
 		{#each suggestions as i}
 			<a
 				href={normalizeUrl(parseQuery(i))}
-				class="my-2 flex items-center gap-x-4 rounded-lg border border-neutral-800/75 bg-neutral-900 p-2 text-lg shadow-lg outline-none hover:bg-neutral-800 focus:bg-neutral-800"
+				class="my-2 flex items-center gap-x-4 rounded-lg border border-neutral-800/75 bg-black/50 p-2 text-lg shadow-lg outline-none backdrop-blur-xl hover:bg-neutral-900/50 focus:bg-neutral-900/50"
 				on:mousemove={(event) => event.target.focus()}
 				on:focus={() => (search = search.includes(':') ? search.split(':')[0] + ':' + i : i)}
 				in:fly|local
@@ -83,14 +83,4 @@
 			</a>
 		{/each}
 	</ul>
-	{#if suggestions.length === 0}
-		<!-- <button
-			class="absolute right-0 bottom-8 left-0 mx-auto w-20 rounded-full border border-neutral-800/75 bg-black py-1 tracking-tight text-neutral-400 outline-none transition-all duration-300 hover:w-24"
-			type="button"
-			on:click={() => ($searching = false)}
-			in:blur
-		>
-			home
-		</button> -->
-	{/if}
 </form>

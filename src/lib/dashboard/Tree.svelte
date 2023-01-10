@@ -6,23 +6,29 @@
 </script>
 
 <button
-	class="max-h-14 min-w-[20ch] overflow-hidden rounded-xl border border-neutral-800/25 bg-black/40 font-semibold shadow outline-none backdrop-blur-xl duration-500 focus:max-h-64 md:bg-neutral-900"
+	class="group max-h-14 overflow-hidden rounded-xl border border-neutral-800/25 bg-black/40 font-semibold shadow backdrop-blur-xl duration-500 focus:max-h-64 md:bg-neutral-900"
 	bind:this={button}
 	on:click={button.focus()}
 >
-	<span class="justify flex h-14 items-center truncate px-4 font-semibold">~/{title}</span>
+	<span
+		class="flex h-14 items-center truncate px-4 text-lg font-semibold duration-300 hover:pl-[25%] group-focus:pl-[25%]"
+	>
+		~/{title}
+	</span>
+
 	<div class="break-all pl-6 pb-4 pr-4 text-left">
 		<ul>
 			{#each links as link}
 				<li>
-					<a href={link.url}>{link.name}</a>
+					<a href={link.url}>
+						{link.name}
+					</a>
 				</li>
 			{/each}
 		</ul>
 	</div>
 </button>
 
-<!-- Component End  -->
 <style lang="postcss">
 	a {
 		@apply font-medium hover:underline;
