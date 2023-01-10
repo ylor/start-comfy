@@ -7,7 +7,7 @@ body {
 }
 
 .el1 {
-	@apply border border-neutral-800/25 bg-black/40 backdrop-blur-xl md:bg-neutral-900;
+	@apply border border-neutral-800/25 bg-black/40 outline-none backdrop-blur-xl md:bg-neutral-900;
 }
 
 .crt::before {

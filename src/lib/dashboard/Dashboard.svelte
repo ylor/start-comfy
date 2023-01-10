@@ -53,7 +53,7 @@
 
 <svelte:window on:keydown={handleKeydown} />
 
-<section class="mt-8 flex h-full flex-col items-center" in:blur>
+<section class="mt-8 flex h-full select-none flex-col items-center" in:blur>
 	<aside class="text-center">
 		<time class="text-4xl font-black">
 			{time}

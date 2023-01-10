@@ -51,7 +51,7 @@
 	<!-- svelte-ignore a11y-autofocus -->
 	<input
 		autofocus
-		class="el1 focus:text-neutral-1adf00 my-2 flex items-center gap-x-4 rounded-xl p-2 text-2xl text-neutral-200 shadow-lg outline-none placeholder:text-neutral-500 hover:text-neutral-100 hover:brightness-110 focus:brightness-125"
+		class="el1 focus:text-neutral-1adf00 my-2 flex items-center gap-x-4 rounded-xl p-2 text-2xl text-neutral-200 shadow-lg placeholder:text-neutral-500 hover:text-neutral-100 hover:brightness-110 focus:brightness-125"
 		placeholder="search"
 		bind:this={input}
 		bind:value={search}
