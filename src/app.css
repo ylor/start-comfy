@@ -6,6 +6,10 @@ body {
 	@apply bg-black font-mono text-neutral-300;
 }
 
+.el1 {
+	@apply border border-neutral-800/25 bg-black/40 backdrop-blur-xl md:bg-neutral-900;
+}
+
 .crt::before {
 	content: ' ';
 	display: block;

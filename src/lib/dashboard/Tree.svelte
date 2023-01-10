@@ -6,7 +6,7 @@
 </script>
 
 <button
-	class="group max-h-14 overflow-hidden rounded-xl border border-neutral-800/25 bg-black/40 font-semibold shadow backdrop-blur-xl duration-500 focus:max-h-64 md:bg-neutral-900"
+	class="el1 group max-h-14 overflow-hidden rounded-xl border duration-500 focus:max-h-64 md:bg-neutral-900"
 	bind:this={button}
 	on:click={button.focus()}
 >

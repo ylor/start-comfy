@@ -51,7 +51,7 @@
 	<!-- svelte-ignore a11y-autofocus -->
 	<input
 		autofocus
-		class="my-2 flex items-center gap-x-4 rounded-xl border border-neutral-800/75 bg-black/50 p-2 text-2xl text-neutral-100 shadow-lg outline-none backdrop-blur-xl placeholder:text-neutral-500 focus:border-neutral-700/50 focus:bg-neutral-900/50"
+		class="el1 focus:text-neutral-1adf00 my-2 flex items-center gap-x-4 rounded-xl p-2 text-2xl text-neutral-200 shadow-lg outline-none placeholder:text-neutral-500 hover:text-neutral-100 hover:brightness-110 focus:brightness-125"
 		placeholder="search"
 		bind:this={input}
 		bind:value={search}
@@ -61,20 +61,20 @@
 		{#each suggestions as i}
 			<a
 				href={normalizeUrl(parseQuery(i))}
-				class="my-2 flex items-center gap-x-4 rounded-lg border border-neutral-800/75 bg-black/50 p-2 text-lg shadow-lg outline-none backdrop-blur-xl hover:bg-neutral-900/50 focus:bg-neutral-900/50"
+				class="el1 my-2 flex items-center gap-x-4 rounded-xl p-2 text-lg shadow-lg hover:brightness-110 focus:brightness-125"
 				on:mousemove={(event) => event.target.focus()}
 				on:focus={() => (search = search.includes(':') ? search.split(':')[0] + ':' + i : i)}
 				in:fly|local
 			>
 				<!-- svelte-ignore a11y-missing-attribute -->
 				<img
-					class="ml-2 h-8 w-8"
+					class="ml-2 h-8 w-8 brightness-90"
 					src={fetchFavicon(parseQuery(search.includes(':') ? search.split(':')[0] : i))}
 				/>
 				<li class="break-all text-neutral-100">
 					{@html i.replace(
 						search.substring(search.indexOf(':') + 1).match(/.*\S/),
-						`<span class="text-neutral-300">${search
+						`<span class="text-neutral-400">${search
 							.substring(search.indexOf(':') + 1)
 							.trim()}</span>`
 					)}
