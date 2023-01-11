@@ -5,12 +5,10 @@
 
 	import fetchFavicon from '$lib/actions/fetchFavicon.js';
 	import fetchSuggestions from '$lib/actions/fetchSuggestions.js';
-	import fetchKagi from '$lib/actions/fetchKagi.js';
 	import { focusable_children, trap } from '$lib/actions/focus.js';
 	import parseQuery from '$lib/actions/parseQuery.js';
 	import { normalizeUrl } from '$lib/actions/parseUrl.js';
 
-	console.log(fetchKagi('r/mech'));
 	let form;
 	let input;
 	let search = '';
