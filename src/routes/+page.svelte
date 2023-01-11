@@ -37,6 +37,6 @@
 
 <style lang="postcss">
 	.btn {
-		@apply absolute right-0 bottom-4 left-0 mx-auto w-24 rounded-full py-1 tracking-tight text-neutral-500 backdrop-blur-xl duration-300 hover:w-28 hover:text-neutral-300;
+		@apply absolute right-0 bottom-4 left-0 mx-auto w-24 select-none rounded-full py-1 tracking-tight text-neutral-400 backdrop-blur-xl transition-all duration-300 hover:w-28 hover:text-neutral-200;
 	}
 </style>

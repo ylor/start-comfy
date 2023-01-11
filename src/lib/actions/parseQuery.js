@@ -28,15 +28,6 @@ export default function parse(string) {
 	if (stringLower.startsWith('@') || stringLower === 'twitter') {
 		return `https://twitter.com/${string}`;
 	}
-	if (stringLower.endsWith('twitter')) {
-		return 'https://twitter.com/' + string.replace('twitter', '').trim();
-	}
-
-	if (stringLower.includes('wiki')) {
-		return (
-			'https://wikipedia.org/wiki/' + string.replace('wiki', '').replace('wikipedia', '').trim()
-		);
-	}
 
 	// handle ~ for Tildes (~tech)
 	if (string.startsWith('~') || stringLower === 'tildes') {
@@ -46,6 +37,12 @@ export default function parse(string) {
 	// handle $ for stocks ($aapl)
 	if (string.startsWith('$')) {
 		return `https://google.com/finance?q=${string}`;
+	}
+
+	if (stringLower.includes('wiki')) {
+		return (
+			'https://wikipedia.org/wiki/' + string.replace('wiki', '').replace('wikipedia', '').trim()
+		);
 	}
 
 	// handle r/ for subreddits

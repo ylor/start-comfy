@@ -6,12 +6,12 @@
 </script>
 
 <button
-	class="el1 group max-h-14 overflow-hidden rounded-xl border duration-500 focus:max-h-64 md:bg-neutral-900"
+	class="el1 group max-h-14 overflow-hidden rounded-xl border duration-300 focus:max-h-64 md:bg-neutral-900"
 	bind:this={button}
 	on:click={button.focus()}
 >
 	<span
-		class="flex h-14 items-center truncate px-4 text-lg font-semibold duration-300 hover:pl-[25%] group-focus:pl-[25%]"
+		class="flex h-14 items-center truncate px-4 text-lg font-semibold duration-300 group-hover:pl-[15%] group-focus:pl-[25%]"
 	>
 		~/{title}
 	</span>

@@ -5,10 +5,12 @@
 
 	import fetchFavicon from '$lib/actions/fetchFavicon.js';
 	import fetchSuggestions from '$lib/actions/fetchSuggestions.js';
+	import fetchKagi from '$lib/actions/fetchKagi.js';
 	import { focusable_children, trap } from '$lib/actions/focus.js';
 	import parseQuery from '$lib/actions/parseQuery.js';
 	import { normalizeUrl } from '$lib/actions/parseUrl.js';
 
+	console.log(fetchKagi('r/mech'));
 	let form;
 	let input;
 	let search = '';
@@ -51,7 +53,7 @@
 	<!-- svelte-ignore a11y-autofocus -->
 	<input
 		autofocus
-		class="el1 focus:text-neutral-1adf00 my-2 flex items-center gap-x-4 rounded-xl p-2 text-2xl text-neutral-200 shadow-lg placeholder:text-neutral-500 hover:text-neutral-100 hover:brightness-110 focus:brightness-125"
+		class="el1 focus:text-neutral-1adf00 my-2 flex items-center gap-x-4 rounded-xl p-2 text-2xl text-neutral-200 shadow-lg placeholder:text-neutral-500 focus:text-neutral-100"
 		placeholder="search"
 		bind:this={input}
 		bind:value={search}
@@ -60,8 +62,8 @@
 	<ul class="select-none overflow-y-auto md:overflow-hidden">
 		{#each suggestions as i}
 			<a
-				href={normalizeUrl(parseQuery(i))}
-				class="el1 my-2 flex items-center gap-x-4 rounded-xl p-2 text-lg shadow-lg hover:brightness-110 focus:brightness-125"
+				href={normalizeUrl(parseQuery(search.includes(':') ? search.split(':')[0] + ':' + i : i))}
+				class="el1 group my-2 flex items-center gap-x-4 rounded-xl p-2 text-lg shadow-lg hover:bg-neutral-800 focus:bg-neutral-800"
 				on:mousemove={(event) => event.target.focus()}
 				on:focus={() => (search = search.includes(':') ? search.split(':')[0] + ':' + i : i)}
 				in:fly|local
@@ -74,7 +76,7 @@
 				<li class="break-all text-neutral-100">
 					{@html i.replace(
 						search.substring(search.indexOf(':') + 1).match(/.*\S/),
-						`<span class="text-neutral-400">${search
+						`<span class="text-neutral-400 group-hover:text-neutral-100 group-focus:text-neutral-100">${search
 							.substring(search.indexOf(':') + 1)
 							.trim()}</span>`
 					)}
