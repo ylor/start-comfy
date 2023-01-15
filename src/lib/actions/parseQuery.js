@@ -48,7 +48,7 @@ export default function parse(string) {
 	// handle r/ for subreddits
 	if (stringLower.startsWith('r/')) {
 		// handled aliased subreddits
-		const subredditAlias = stringLower.split('/').slice(0, 2).join('/');
+		const subredditAlias = stringLower.match(/r\/\w+/i)[0];
 		if (keys.includes(subredditAlias)) {
 			// aliased subreddit search
 			// r/mm:vega

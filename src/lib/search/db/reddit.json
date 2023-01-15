@@ -20,7 +20,7 @@
 		"name": "r/BuildAPCSales",
 		"alias": "r/bapcs",
 		"url": "https://reddit.com/r/buildapcsales",
-		"search_url": "https://r/buildapcsales/search?q={}&restrict_sr=1"
+		"search_url": "https://reddit.com/r/buildapcsales/search?q={}&restrict_sr=1"
 	},
 	{
 		"name": "r/HipHopHeads",
