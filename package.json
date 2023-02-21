@@ -10,26 +10,26 @@
 		"fmt": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^1.0.0",
-		"@sveltejs/adapter-vercel": "^1.0.1",
-		"@sveltejs/kit": "^1.0.11",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^2.0.4",
+		"@sveltejs/kit": "^1.7.2",
 		"autoprefixer": "^10.4.13",
-		"eslint": "^8.31.0",
+		"eslint": "^8.34.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"eslint-plugin-tailwindcss": "^3.8.0",
+		"eslint-plugin-tailwindcss": "^3.8.3",
 		"postcss": "^8.4.21",
 		"postcss-100vh-fix": "^1.0.2",
-		"prettier": "^2.8.2",
+		"prettier": "^2.8.4",
 		"prettier-plugin-svelte": "^2.9.0",
-		"prettier-plugin-tailwindcss": "^0.2.1",
+		"prettier-plugin-tailwindcss": "^0.2.3",
 		"svelte": "^3.55.1",
-		"tailwindcss": "^3.2.4",
-		"vite": "^4.0.4"
+		"tailwindcss": "^3.2.7",
+		"vite": "^4.1.2"
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/jetbrains-mono": "^4.5.11",
+		"@fontsource/jetbrains-mono": "^4.5.12",
 		"fetch-jsonp": "^1.2.3"
 	}
 }
