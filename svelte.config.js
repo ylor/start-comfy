@@ -5,7 +5,10 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 const config = {
 	kit: {
 		//adapter: adapter()
-		adapter: vercel({ runtime: 'edge' })
+		adapter: vercel({ runtime: 'edge' }),
+		output: {
+			preloadStrategy: 'preload-mjs'
+		}
 	},
 	preprocess: vitePreprocess({ postcss: true })
 };
