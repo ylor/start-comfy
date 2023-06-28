@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Absolute",
+    "alias": "abs",
+    "url": "https://signin.absolute.com"
+  },
+  {
+    "name": "Apple Business Manager",
+    "alias": "abm",
+    "url": "https://business.apple.com"
+  },
+  {
+    "name": "Azure",
+    "alias": "azure",
+    "url": "https://portal.azure.com"
+  },
+  {
+    "name": "Azure Active Directory",
+    "alias": "aad",
+    "url": "https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Overview"
+  },
+  {
+    "name": "Calendly",
+    "alias": "calendly",
+    "url": "https://calendly.com/event_types/user/me"
+  },
+  {
+    "name": "Gmail",
+    "alias": "gmail",
+    "url": "https://mail.google.com"
+  },
+  {
+    "name": "Google Cal",
+    "alias": "gcal",
+    "url": "https://calendar.google.com"
+  },
+  {
+    "name": "Google Docs",
+    "alias": "docs",
+    "url": "https://docs.google.com"
+  },
+  {
+    "name": "Google Drive",
+    "alias": "gdrive",
+    "url": "https://drive.google.com"
+  },
+  {
+    "name": "Google Sheets",
+    "alias": "sheets",
+    "url": "https://sheets.google.com"
+  },
+  {
+    "name": "Google Voice",
+    "alias": "gvoice",
+    "url": "https://voice.google.com"
+  },
+  {
+    "name": "Intune",
+    "alias": "mem",
+    "url": "https://endpoint.microsoft.com"
+  },
+  {
+    "name": "Jira",
+    "alias": "jira",
+    "url": "https://joinpapa.atlassian.net"
+  },
+  {
+    "name": "Kandji",
+    "alias": "kandji",
+    "url": "https://papa.kandji.io"
+  },
+  {
+    "name": "MSAdmin",
+    "alias": "msadmin",
+    "url": "https://admin.microsoft.com"
+  },
+  {
+    "name": "Papa",
+    "alias": "papa",
+    "url": "https://papa.okta.com"
+  },
+  {
+    "name": "Papa Okta",
+    "alias": "okta",
+    "url": "https://papa-admin.okta.com/admin/dashboard"
+  },
+  {
+    "name": "Snipe-IT",
+    "alias": "snipe",
+    "url": "https://papa.snipe-it.io"
+  },
+  {
+    "name": "Windows 365",
+    "alias": "w365",
+    "url": "https://windows365.microsoft.com"
+  },
+  {
+    "name": "UPS CampusShip",
+    "alias": "ups",
+    "url": "https://campusship.ups.com"
+  }
+]

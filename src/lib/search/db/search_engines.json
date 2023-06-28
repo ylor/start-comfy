@@ -1,0 +1,12 @@
+[
+  {
+    "name": "DuckDuckGo",
+    "alias": "duck",
+    "url": "https://duckduckgo.com/?q="
+  },
+  {
+    "name": "Google",
+    "alias": "google",
+    "url": "https://google.com/search?q="
+  }
+]

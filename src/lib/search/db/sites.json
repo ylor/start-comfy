@@ -1,0 +1,329 @@
+[
+  {
+    "name": "/g/ - Technology",
+    "alias": "g",
+    "url": "https://boards.4chan.org/g/catalog"
+  },
+  {
+    "name": "/w/ - Wallpapers",
+    "alias": "w",
+    "url": "https://boards.4chan.org/w/catalog"
+  },
+  {
+    "name": "/wg/ - Wallpapers General",
+    "alias": "wg",
+    "url": "https://boards.4chan.org/wg/catalog"
+  },
+  {
+    "name": "1337x",
+    "alias": "1337",
+    "url": "https://1377x.to",
+    "search_url": "https://1377x.to/sort-search/{}/seeders/desc/1"
+  },
+  {
+    "name": "1Password",
+    "alias": "pw",
+    "url": "https://my.1password.com"
+  },
+  {
+    "name": "1Password Generator",
+    "alias": "pwg",
+    "url": "https://1password.com/password-generator"
+  },
+  {
+    "name": "Amazon",
+    "alias": "a",
+    "url": "https://amazon.com",
+    "search_url": "https://amazon.com/s?k={}"
+  },
+  {
+    "name": "AudioScienceReview",
+    "alias": "asr",
+    "url": "https://audiosciencereview.com/forum/index.php?reviews"
+  },
+  {
+    "name": "Best Buy",
+    "alias": "bby",
+    "url": "https://bestbuy.com",
+    "search_url": "https://bestbuy.com/site/searchpage.jsp?st={}"
+  },
+  {
+    "name": "Bitwarden",
+    "alias": "bw",
+    "url": "https://vault.bitwarden.com"
+  },
+  {
+    "name": "CamelCamelCamel",
+    "alias": "ccc",
+    "url": "https://camelcamelcamel.com",
+    "search_url": "https://camelcamelcamel.com/search?sq={}"
+  },
+  {
+    "name": "ClickUp",
+    "alias": "cu",
+    "url": "https://app.clickup.com"
+  },
+  {
+    "name": "Daring Fireball",
+    "alias": "df",
+    "url": "https://daringfireball.net"
+  },
+  {
+    "name": "Discord",
+    "alias": "discord",
+    "url": "https://discordapp.com/activity"
+  },
+  {
+    "name": "Emojipedia",
+    "alias": "emoji",
+    "url": "https://emojipedia.org",
+    "search_url": "https://emojipedia.org/search/?q={}"
+  },
+  {
+    "name": "Epic Game Store",
+    "alias": "egs",
+    "url": "https://epicgames.com/store",
+    "search_url": "https://epicgames.com/store/en-US/browse?q={}"
+  },
+  {
+    "name": "Fitgirl",
+    "alias": "fg",
+    "url": "https://fitgirl-repacks.site",
+    "search_url": "https://fitgirl-repacks.site/?s={}"
+  },
+  {
+    "name": "Geekhack",
+    "alias": "gh",
+    "url": "https://geekhack.org"
+  },
+  {
+    "name": "Geekhack - Group Buys and Preorders",
+    "alias": "ghgb",
+    "url": "https://geekhack.org/index.php?board=70.0"
+  },
+  {
+    "name": "Geekhack - Interest Check",
+    "alias": "ghic",
+    "url": "https://geekhack.org/index.php?board=132.0"
+  },
+  {
+    "name": "Giant Bomb",
+    "alias": "gb",
+    "url": "https://giantbomb.com",
+    "search_url": "https://giantbomb.com/search/?i=&q={}"
+  },
+  {
+    "name": "Giant Bomb Infinite",
+    "alias": "gb8",
+    "url": "https://giantbomb.com/infinite"
+  },
+  {
+    "name": "Giphy",
+    "alias": "gif",
+    "url": "https://giphy.com",
+    "search_url": "https://giphy.com/search/{}"
+  },
+  {
+    "name": "Github",
+    "alias": "git",
+    "url": "https://github.com",
+    "search_url": "https://github.com/search?q={}"
+  },
+  {
+    "name": "Grumpy Website",
+    "alias": "grumpy",
+    "url": "https://grumpy.website"
+  },
+  {
+    "name": "Hacker News",
+    "alias": "hn",
+    "url": "https://news.ycombinator.com",
+    "search_url": "https://hn.algolia.com/?&query={}"
+  },
+  {
+    "name": "How Long to Beat",
+    "alias": "hltb",
+    "url": "https://howlongtobeat.com",
+    "search_url": "https://howlongtobeat.com/?q={}"
+  },
+  {
+    "name": "IGG-GAMES",
+    "alias": "igg",
+    "url": "https://igg-games.com",
+    "search_url": "https://igg-games.com/?s={}"
+  },
+  {
+    "name": "Instagram",
+    "alias": "ig",
+    "url": "https://instagram.com"
+  },
+  {
+    "name": "Letterboxd",
+    "alias": "lb",
+    "url": "https://letterboxd.com/films/popular/this/week/size/large",
+    "search_url": "https://letterboxd.com/search/films/{}"
+  },
+  {
+    "name": "Lobsters",
+    "alias": "lobsters",
+    "url": "https://lobste.rs",
+    "search_url": "https://lobste.rs/search?q={}"
+  },
+  {
+    "name": "MyAnimeList",
+    "alias": "mal",
+    "url": "https://myanimelist.net",
+    "search_url": "https://myanimelist.net/search/all?q={}"
+  },
+  {
+    "name": "NY Times Crossword",
+    "alias": "crossword",
+    "url": "https://nytimes.com/crosswords"
+  },
+  {
+    "name": "Netflix",
+    "alias": "nf",
+    "url": "https://netflix.com",
+    "search_url": "https://netflix.com/search?q={}"
+  },
+  {
+    "name": "Node Package Manager",
+    "alias": "npm",
+    "url": "https://npmjs.com",
+    "search_url": "https://npmjs.com/search?q={}"
+  },
+  {
+    "name": "Notion",
+    "alias": "notion",
+    "url": "https://notion.so"
+  },
+  {
+    "name": "Nyaa",
+    "alias": "nyaa",
+    "url": "https://nyaa.si",
+    "search_url": "https://nyaa.si/?f=0&c=0_0&q={}"
+  },
+  {
+    "name": "OneDrive",
+    "alias": "onedrive",
+    "url": "https://onedrive.live.com"
+  },
+  {
+    "name": "Overcast",
+    "alias": "overcast",
+    "url": "https://overcast.fm"
+  },
+  {
+    "name": "Pinboard",
+    "alias": "pinboard",
+    "url": "https://pinboard.in",
+    "search_url": "https://pinboard.in/search/u:rolyreyes?query={}"
+  },
+  {
+    "name": "Plex.tv",
+    "alias": "plextv",
+    "url": "https://app.plex.tv/desktop",
+    "search_url": "https://desktop#!/search?query={}"
+  },
+  {
+    "name": "RARBG",
+    "alias": "rar",
+    "url": "https://rarbg.to/torrents",
+    "search_url": "https://rarbg.to/torrents?search={}"
+  },
+  {
+    "name": "Replit",
+    "alias": "repl",
+    "url": "https://replit.com/languages/javascript"
+  },
+  {
+    "name": "Replit - Javascript",
+    "alias": "js",
+    "url": "https://replit.com/languages/javascript"
+  },
+  {
+    "name": "ResetERA",
+    "alias": "re",
+    "url": "https://resetera.com"
+  },
+  {
+    "name": "Simplenote",
+    "alias": "sn",
+    "url": "https://app.simplenote.com"
+  },
+  {
+    "name": "Spotify",
+    "alias": "spotify",
+    "url": "https://open.spotify.com"
+  },
+  {
+    "name": "Steam",
+    "alias": "steam",
+    "url": "https://store.steampowered.com",
+    "search_url": "https://store.steampowered.com/search/?term={}"
+  },
+  {
+    "name": "Tailwind",
+    "alias": "tw",
+    "url": "https://tailwindcss.com/"
+  },
+  {
+    "name": "The Movie Database",
+    "alias": "tmdb",
+    "url": "https://themoviedb.org",
+    "search_url": "https://themoviedb.org/search?query={}&language=en-US"
+  },
+  {
+    "name": "TheTVDB",
+    "alias": "tvdb",
+    "url": "https://thetvdb.com",
+    "search_url": "https://thetvdb.com/search?query={}"
+  },
+  {
+    "name": "Tildes",
+    "alias": "tildes",
+    "url": "https://tildes.net"
+  },
+  {
+    "name": "Valorant Champions Tour",
+    "alias": "vct",
+    "url": "https://valorantesports.com/schedule"
+  },
+  {
+    "name": "Vercel",
+    "alias": "vercel",
+    "url": "https://vercel.com/"
+  },
+  {
+    "name": "VSCode",
+    "alias": "code",
+    "url": "https://vscode.dev"
+  },
+  {
+    "name": "Wikipedia",
+    "alias": "wiki",
+    "url": "https://wikipedia.org",
+    "search_url": "https://en.wikipedia.org/wiki/{}"
+  },
+  {
+    "name": "Wordle",
+    "alias": "wordle",
+    "url": "https://nytimes.com/games/wordle"
+  },
+  {
+    "name": "YouTube",
+    "alias": "y",
+    "url": "https://www.youtube.com/feed/subscriptions",
+    "search_url": "https://youtube.com/results?search_query={}"
+  },
+  {
+    "name": "iCloud",
+    "alias": "icloud",
+    "url": "https://icloud.com"
+  },
+  {
+    "name": "iCloud Mail",
+    "alias": "mail",
+    "url": "https://icloud.com/#mail"
+  }
+]

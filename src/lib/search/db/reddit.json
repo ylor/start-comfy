@@ -1,0 +1,55 @@
+[
+  {
+    "name": "Reddit",
+    "alias": "r",
+    "url": "https://reddit.com",
+    "search_url": "https://reddit.com/search?q={}&restrict_sr=1"
+  },
+  {
+    "name": "Reddit User",
+    "alias": "u",
+    "url": "https://reddit.com/u"
+  },
+  {
+    "name": "r/Battlestations",
+    "alias": "r/bs",
+    "url": "https://reddit.com/r/battlestations",
+    "search_url": "https://reddit.com/r/battlestations/search?q={}&restrict_sr=1"
+  },
+  {
+    "name": "r/BuildAPCSales",
+    "alias": "r/bapcs",
+    "url": "https://reddit.com/r/buildapcsales",
+    "search_url": "https://reddit.com/r/buildapcsales/search?q={}&restrict_sr=1"
+  },
+  {
+    "name": "r/HipHopHeads",
+    "alias": "r/hhh",
+    "url": "https://reddit.com/r/hiphopheads",
+    "search_url": "https://reddit.com/r/hiphopheads/search?q={}&restrict_sr=1"
+  },
+  {
+    "name": "r/LivestreamFail",
+    "alias": "r/lsf",
+    "url": "https://reddit.com/r/livestreamfail",
+    "search_url": "https://reddit.com/r/livestreamfail/search?q={}&restrict_sr=1"
+  },
+  {
+    "name": "r/MechMarket",
+    "alias": "r/mm",
+    "url": "https://reddit.com/r/mechmarket",
+    "search_url": "https://reddit.com/r/mechmarket/search?q={}&restrict_sr=1"
+  },
+  {
+    "name": "r/MechanicalKeyboards",
+    "alias": "r/mk",
+    "url": "https://reddit.com/r/mechanicalkeyboards",
+    "search_url": "https://reddit.com/r/mechanicalkeyboards/search?q={}&restrict_sr=1"
+  },
+  {
+    "name": "r/SquaredCircle",
+    "alias": "r/sc",
+    "url": "https://reddit.com/r/squaredcircle",
+    "search_url": "https://reddit.com/r/squaredcircle/search?q={}&restrict_sr=1"
+  }
+]

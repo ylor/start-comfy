@@ -1,0 +1,8 @@
+[
+  { "name": "giant_bomb", "url": "https://github.com" },
+  { "name": "letterboxd", "url": "https://letterboxd.com" },
+  { "name": "plex", "url": "https://plex.tv/web" },
+  { "name": "spotify", "url": "https://open.spotify.com" },
+  { "name": "twitch", "url": "https://twitch.tv" },
+  { "name": "youtube", "url": "https://www.youtube.com/feed/subscriptions" }
+]

@@ -1,0 +1,9 @@
+[
+  { "name": "github", "url": "https://github.com" },
+  { "name": "hacker_news", "url": "https://news.ycombinator.com" },
+  { "name": "instagram", "url": "https://instagram.com" },
+  { "name": "resetera", "url": "https://restera.com" },
+  { "name": "mastodon", "url": "https://mastodon.social" },
+  { "name": "tildes", "url": "https://tildes.net" },
+  { "name": "twitter", "url": "https://twitter.com" }
+]

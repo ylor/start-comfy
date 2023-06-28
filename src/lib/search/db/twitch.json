@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Twitch",
+    "alias": "ttv",
+    "url": "https://twitch.tv"
+  },
+  {
+    "name": "Hasanabi",
+    "alias": "azan",
+    "url": "https://twitch.tv/hasanabi"
+  },
+  {
+    "name": "Paymoneywubby",
+    "alias": "wubby",
+    "url": "https://twitch.tv/paymoneywubby"
+  },
+  {
+    "name": "Tarik",
+    "alias": "tarik",
+    "url": "https://twitch.tv/tarik"
+  }
+]

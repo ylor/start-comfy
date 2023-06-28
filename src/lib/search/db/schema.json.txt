@@ -1,0 +1,9 @@
+[
+  {
+    "name": "string",
+    "alias": "string",
+    "category": "string",
+    "url": "string",
+    "search": "string"
+  }
+]

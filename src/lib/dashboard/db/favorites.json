@@ -1,0 +1,14 @@
+[
+  { "name": "Github", "url": "https://github.com" },
+  { "name": "Grumpy", "url": "https://grumpy.website" },
+  { "name": "Hacker", "url": "https://news.ycombinator.com" },
+  { "name": "Instagram", "url": "https://instagram.com" },
+  { "name": "Letterboxd", "url": "https://letterboxd.com" },
+  { "name": "ResetEra", "url": "https://restera.com" },
+  { "name": "Mastodon", "url": "https://mastodon.social" },
+  { "name": "Plex", "url": "https://plex.tv/web" },
+  { "name": "Tildes", "url": "https://tildes.net" },
+  { "name": "Twitter", "url": "https://twitter.com" },
+  { "name": "Twitch", "url": "https://twitch.tv" },
+  { "name": "YouTube", "url": "https://www.youtube.com/feed/subscriptions" }
+]
