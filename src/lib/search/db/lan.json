@@ -1,10 +1,5 @@
 [
   {
-    "name": "Homebridge",
-    "alias": "hb",
-    "url": "http://jet.lan:8581"
-  },
-  {
     "name": "Adguard",
     "alias": "dns",
     "url": "http://10.0.1.2:8053"
@@ -47,6 +42,6 @@
   {
     "name": "UniFi",
     "alias": "unifi",
-    "url": "http://jet.lan:8080"
+    "url": "http://10.0.1.2:8080"
   }
 ]
