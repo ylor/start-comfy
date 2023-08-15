@@ -4,6 +4,11 @@
     "alias": "dns",
     "url": "http://10.0.1.2:8053"
   },
+    {
+    "name": "Modem",
+    "alias": "modem",
+    "url": "http://192.168.1.254"
+  },
   {
     "name": "Plex",
     "alias": "plex",
