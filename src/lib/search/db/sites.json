@@ -226,15 +226,16 @@
     "search_url": "https://desktop#!/search?query={}"
   },
   {
+    "name": "Predb",
+    "alias": "pre",
+    "url": "https://predb.net/",
+    "search_url": "https://predb.net/search/{}?page=1"
+  },
+  {
     "name": "RARBG",
     "alias": "rar",
     "url": "https://rarbg.to/torrents",
     "search_url": "https://rarbg.to/torrents?search={}"
-  },
-  {
-    "name": "Replit",
-    "alias": "repl",
-    "url": "https://replit.com/languages/javascript"
   },
   {
     "name": "Replit - Javascript",
@@ -309,6 +310,12 @@
     "name": "Wordle",
     "alias": "wordle",
     "url": "https://nytimes.com/games/wordle"
+  },
+  {
+    "name": "Yaps",
+    "alias": "yaps",
+    "url": "https://yaps.cc/s",
+    "search_url": "https://yaps.cc/search/{}?page=1"
   },
   {
     "name": "YouTube",
